@@ -45,7 +45,7 @@ import React from "react";
             h('div', {"className": "text"}, this.props.widgetFor('body'))
         ));*/
 
-        return (
+        return h(
           <div class="section1">
             <div class="container">
               <h1 class="blog-page-header">{entry.getIn(['data', 'title'])}</h1>
