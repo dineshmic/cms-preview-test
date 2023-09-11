@@ -12,12 +12,42 @@
 <body>
   <!-- Include the script that builds the page and powers Netlify CMS -->
   <script src="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.js"></script>
-  
-  <script>
-    import React from "react";
+
+<script>
+import React from "react";
+
+CMS.registerPreviewStyle("/../assets/css/bootstrap.min.css");
+CMS.registerPreviewStyle("/../assets/css/blog-style.css");
+
+
+export default class BlogPagePreview extends React.Component {
+    render() {
+        const { entry } = this.props;
+
+        return (
+          <div class="section1">
+            <div class="container">
+              <h1 class="blog-page-header">{entry.getIn(['data', 'title'])}</h1>
+              <div class="row">
+                <div class="col-md-2 d-flex mb-2"><button class="blog-tab-pill">{entry.getIn(['data', 'category'])}</button></div>
+                <div class="col-md-2 d-flex mb-2"><button class="blog-tab-pill">{entry.getIn(['data', 'author'])}</button></div>
+                <div class="col-md-2 d-flex mb-2"><button class="blog-tab-pill">{entry.getIn(['data', 'date'])}</button></div>
+              </div>
+              <!--=============================Blog Image===============================-->
+              <div class="mt-5">
+                <img src="{entry.getIn(['data', 'image'])}" alt="..." class="w-100"/>
+              </div>
+            </div>
+          </div>
+        );
+    }
+}
+
+
+
     
-    CMS.registerPreviewStyle("/../assets/css/bootstrap.min.css");
-    CMS.registerPreviewStyle("/../assets/css/blog-style.css");
+
+    
 
     var PostPreview = createClass({
       render: function() {
@@ -48,7 +78,7 @@
                 <div class="col-md-2 d-flex mb-2"><button class="blog-tab-pill">{entry.getIn(['data', 'author'])}</button></div>
                 <div class="col-md-2 d-flex mb-2"><button class="blog-tab-pill">{entry.getIn(['data', 'date'])}</button></div>
               </div>
-              <!--=============================Blog Image===============================-->
+              
               <div class="mt-5">
                 <img src="{entry.getIn(['data', 'image'])}" alt="..." class="w-100"/>
               </div>
@@ -59,7 +89,7 @@
       }
     });
         
-    CMS.registerPreviewTemplate("blog", PostPreview);
+    CMS.registerPreviewTemplate("blog", BlogPagePreview);
     </script>
 
 
