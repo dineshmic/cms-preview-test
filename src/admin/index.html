@@ -20,7 +20,8 @@
         /*var image = entry.getIn(['data', 'image']);
         var bg = this.props.getAsset(image);*/
 
-        return h('div', {"className": "section"},
+        return 
+          h('div', {"className": "section"},
           h('h1', {}, entry.getIn(['data', 'title'])),
           h('div', {"className": "text"}, this.props.widgetFor('body'))
         );
