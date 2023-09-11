@@ -13,5 +13,23 @@
   <!-- Include the script that builds the page and powers Netlify CMS -->
   <script src="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.js"></script>
   
+  <script>
+    var PostPreview = createClass({
+      render: function() {
+        var entry = this.props.entry;
+        var image = entry.getIn(['data', 'image']);
+        
+        return h('div', {},
+          h('h1', {}, entry.getIn(['data', 'title'])),
+          h('h1', {}, entry.getIn(['data', 'description'])),
+          h('div', {"className": "text"}, this.props.widgetFor('body'))
+        );
+      }
+    });
+        
+    CMS.registerPreviewTemplate("blog", PostPreview);
+    </script>
+
+
 </body>
 </html>
