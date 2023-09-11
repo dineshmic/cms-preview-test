@@ -17,13 +17,35 @@
     var PostPreview = createClass({
       render: function() {
         var entry = this.props.entry;
-        var image = entry.getIn(['data', 'image']);
-        
+        //var image = entry.getIn(['data', 'image']);
+        /*
         return h('div', {},
           h('h1', {}, entry.getIn(['data', 'title'])),
           h('h1', {}, entry.getIn(['data', 'description'])),
           h('div', {"className": "text"}, this.props.widgetFor('body'))
+        );*/
+
+
+        return (
+            <div>
+                <div>
+                   
+                    <div className="section-34 _2 wf-section">
+                        <div className="div-block-197">
+                            <h1 className="heading-42">{entry.getIn(['data', 'title'])}</h1>
+                            <p className="paragraph-33">{entry.getIn(['data', 'description'])}</p>
+                            <p className="paragraph-31"><strong>{entry.getIn(['data', 'author'])}</strong> &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-span">{entry.getIn(['data', 'publishDate'])} &nbsp;&nbsp;&nbsp;&nbsp;{entry.getIn(['data', 'timeToRead'])}</span></p>
+                            <img src={entry.getIn(['data', 'image'])} loading="lazy" width={1119} sizes="(max-width: 767px) 95vw, (max-width: 991px) 90vw, (max-width: 1279px) 800px, (max-width: 1439px) 59vw, 800px" alt="" className="image-64" />
+                            <div dangerouslySetInnerHTML={{ __html: entry.getIn(['data', 'body']) }}></div>
+                        </div>
+                    </div>
+                    
+                </div>
+              </div>
         );
+
+
+
       }
     });
         
