@@ -19,40 +19,14 @@ import React from "react";
 CMS.registerPreviewStyle("/../assets/css/bootstrap.min.css");
 CMS.registerPreviewStyle("/../assets/css/blog-style.css");
 
-
-export default class BlogPagePreview extends React.Component {
-    render() {
-        const { entry } = this.props;
-
-        return (
-          <div class="section1">
-            <div class="container">
-              <h1 class="blog-page-header">{entry.getIn(['data', 'title'])}</h1>
-              <div class="row">
-                <div class="col-md-2 d-flex mb-2"><button class="blog-tab-pill">{entry.getIn(['data', 'category'])}</button></div>
-                <div class="col-md-2 d-flex mb-2"><button class="blog-tab-pill">{entry.getIn(['data', 'author'])}</button></div>
-                <div class="col-md-2 d-flex mb-2"><button class="blog-tab-pill">{entry.getIn(['data', 'date'])}</button></div>
-              </div>
-              <!--=============================Blog Image===============================-->
-              <div class="mt-5">
-                <img src="{entry.getIn(['data', 'image'])}" alt="..." class="w-100"/>
-              </div>
-            </div>
-          </div>
-        );
-    }
-}
-
-
-
-    
+ 
 
     
 
     var PostPreview = createClass({
       render: function() {
         var entry = this.props.entry;
-        /*
+        
         return h('div', {"className": "section1"},
           h('div', {"className": "container"},
             h('h1', {"className": "blog-page-header"}, entry.getIn(['data', 'title'])),
@@ -68,24 +42,8 @@ export default class BlogPagePreview extends React.Component {
               ),
             ),
             h('div', {"className": "text"}, this.props.widgetFor('body'))
-        ));*/
-        return h(
-          <div class="section1">
-            <div class="container">
-              <h1 class="blog-page-header">{entry.getIn(['data', 'title'])}</h1>
-              <div class="row">
-                <div class="col-md-2 d-flex mb-2"><button class="blog-tab-pill">{entry.getIn(['data', 'category'])}</button></div>
-                <div class="col-md-2 d-flex mb-2"><button class="blog-tab-pill">{entry.getIn(['data', 'author'])}</button></div>
-                <div class="col-md-2 d-flex mb-2"><button class="blog-tab-pill">{entry.getIn(['data', 'date'])}</button></div>
-              </div>
-              
-              <div class="mt-5">
-                <img src="{entry.getIn(['data', 'image'])}" alt="..." class="w-100"/>
-              </div>
-            </div>
-          </div>
-        );
-
+        ));
+        
       }
     });
         
