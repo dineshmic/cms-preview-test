@@ -27,6 +27,7 @@
       render: function() {
         var entry = this.props.entry;
         var image = entry.getIn(['data', 'image']);
+        
         var bg = this.props.getAsset(image);
         
         return h('div', {"className": "section1"},
@@ -43,7 +44,7 @@
                 h('button', {"className": "blog-tab-pill"}, entry.getIn(['data', 'date']))
               ),
             ),
-            h('img', {src: bg.toString()}, {"className": "w-100"}), 
+           
             /*h('div', {"className": "mt-5"}, 
               h('img', {src: bg.toString()}, {"className": "w-100"}),
             ),*/
