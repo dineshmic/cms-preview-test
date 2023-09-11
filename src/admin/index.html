@@ -41,7 +41,7 @@
                 h('button', {"className": "blog-tab-pill"}, entry.getIn(['data', 'date']))
               ),
             ),
-            h('div', {"className": "mt-5"}, h('img', {"className": "w-100"}, entry.getIn(['data', 'image']))),
+            h('div', {"className": "mt-5"}, h('img', {src:entry.getIn(['data', 'image'])} , {"className": "w-100"})),
             h('div', {"className": "text"}, this.props.widgetFor('body'))
         ));
         
