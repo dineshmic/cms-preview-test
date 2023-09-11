@@ -23,8 +23,19 @@
         
         return h('div', {"className": "section1"},
           h('div', {"className": "container"},
-          h('h1', {}, entry.getIn(['data', 'title'])),
-          h('div', {"className": "text"}, this.props.widgetFor('body'))
+            h('h1', {"className": "blog-page-header"}, entry.getIn(['data', 'title'])),
+            h('div', {"className": "row"},
+              h('div', {"className": "col-md-2 d-flex mb-2"}, 
+                h('button', {"className": "blog-tab-pill"}, entry.getIn(['data', 'category']))
+              ),
+              h('div', {"className": "col-md-2 d-flex mb-2"}, 
+                h('button', {"className": "blog-tab-pill"}, entry.getIn(['data', 'author']))
+              ),
+              h('div', {"className": "col-md-2 d-flex mb-2"}, 
+                h('button', {"className": "blog-tab-pill"}, entry.getIn(['data', 'date']))
+              ),
+            ),
+            h('div', {"className": "text"}, this.props.widgetFor('body'))
         ));
       }
     });
