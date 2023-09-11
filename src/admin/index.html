@@ -21,12 +21,9 @@
       render: function() {
         var entry = this.props.entry;
         
-
-        return 
-          h('div', {"className": "section1"},
-            /*h('div', {"className": "container"},*/
-              h('h1', {}, entry.getIn(['data', 'title'])),
-              h('div', {"className": "text"}, this.props.widgetFor('body'))
+        return h('div', {},
+          h('h1', {}, entry.getIn(['data', 'title'])),
+          h('div', {"className": "text"}, this.props.widgetFor('body'))
         );
       }
     });
