@@ -1,2 +1,4 @@
 https://www.youtube.com/watch?v=4wD00RT6d-g
 
+https://preview-auth-doc--netlify-cms-www.netlify.app/docs/customization/#registerpreviewstyle
+

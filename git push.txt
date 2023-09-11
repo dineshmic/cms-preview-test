@@ -2,5 +2,5 @@ git init
 git add .
 git commit -m "for cms"
 //if exists git remote remove origin
-git remote add origin https://github.com/dineshmic/netlify-blog-test.git
+git remote add origin https://github.com/dineshmic/cms-preview-test.git
 git push -u -f origin master
