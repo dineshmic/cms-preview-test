@@ -29,7 +29,8 @@
         var image = entry.getIn(['data', 'image']);
         var bg = this.props.getAsset(image);
         
-        return h('div', {"className": "section1"},
+        return h('div', {},
+        h('div', {"className": "section1"},
           h('div', {"className": "container"},
             h('h1', {"className": "blog-page-header"}, entry.getIn(['data', 'title'])),
             h('div', {"className": "row"},
@@ -48,7 +49,7 @@
 
             h('div', {"className": "container"},
               h('div', {"className": "blog-content"}, this.props.widgetFor('body'))
-            );
+            ));
         
       }
     });
