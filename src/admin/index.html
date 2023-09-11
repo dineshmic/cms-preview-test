@@ -13,8 +13,8 @@
   <!-- Include the script that builds the page and powers Netlify CMS -->
   <script src="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.js"></script>
   <script>
-    //CMS.registerPreviewStyle("/assets/css/blog-style.css");
-    //CMS.registerPreviewStyle("/assets/css/bootstrap.min.css");
+    CMS.registerPreviewStyle("/assets/css/blog-style.css");
+    CMS.registerPreviewStyle("/assets/css/bootstrap.min.css");
   </script>
   <script>
     /*
@@ -66,9 +66,7 @@
                     <div class="col-md-2 d-flex mb-2"><button class="blog-tab-pill">{entry.getIn(['data', 'date'])}</button></div>
                   </div>
                   <!--=============================Blog Image===============================-->
-                  <div class="mt-5">
-                    <img src="{entry.getIn(['data', 'image'])}" alt="..." class="w-100"/>
-                  </div>
+                  
                 </div>
               </div>
 
