@@ -2,9 +2,24 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+
+	<title>{{ titleTag }}</title>
+	<meta content={{metaDescription}} name="description" />
+	<meta content={{ogTitle'}} property="og:title" />
+	<meta content={{ogDescription}} property="og:description" />
+	<meta content={{ogImage}} property="og:image" />
+	<meta content={{twittertitle}} property="twitter:title" />
+	<meta content={{twitterDescription}} property="twitter:description" />
+	<meta content={{twitterImage}} property="twitter:image" />
+	<meta property="og:type" content="website" />
+	<meta content="summary_large_image" name="twitter:card" />
+	<link href="images/favicon.png" rel="icon" type="image/png" />
+	<link href="images/webclip.png" rel="apple-touch-icon" />
+
+
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{{ title }}</title>
+	
 	<link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="/assets/css/blog-style.css" rel="stylesheet" type="text/css">
 	<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>

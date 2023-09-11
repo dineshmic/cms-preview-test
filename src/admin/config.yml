@@ -12,6 +12,16 @@ collections:
   create: true # Allow users to create new documents in this collection
   slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
   fields: # The fields for each document, usually in front matter
+    - { label: "Title Tag", name: "titleTag", widget: "string"}
+    - { label: "Meta Description", name: "metaDescription", widget: "string"}
+    - { label: "OG Title", name: "ogTitle", widget: "string"}
+    - { label: "OG Description", name: "ogDescription", widget: "string"}
+    - { label: "OG Image", name: "ogImage", widget: "image"}
+    - { label: "Twitter Title", name: "twitterTitle", widget: "string"}
+    - { label: "Twitter Description", name: "twitterDescription", widget: "string"}
+    - { label: "Twitter Image", name: "twitterImage", widget: "image"}
+    - { label: "Event Name For Tracking", name: "eventNameForTracking", widget: "string"}
+    - { label: "Event ID For Tracking", name: "eventIdForTracking", widget: "string"}
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Category", name: "category", widget: "string"}
     - {label: "Description", name: "description", widget: "string"}
