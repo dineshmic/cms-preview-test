@@ -5,8 +5,11 @@ CMS.registerPreviewStyle("/../assets/css/blog-style.css");
     render: function() {
       var entry = this.props.entry;
       var image = entry.getIn(['data', 'image']);
+      var bg='';
+      if(image){
+       bg = this.props.getAsset(image);
+      }
       
-      var bg = this.props.getAsset(image);
       
       return h('div', {"className": "section1"},
         h('div', {"className": "container"},
