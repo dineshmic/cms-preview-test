@@ -24,10 +24,10 @@
 
         return 
           h('div', {"className": "section1"},
-            h('div', {"className": "container"},
-              h('h1', {"className": "xxx"}, entry.getIn(['data', 'title'])),
+            /*h('div', {"className": "container"},*/
+              h('h1', {}, entry.getIn(['data', 'title'])),
               h('div', {"className": "text"}, this.props.widgetFor('body'))
-        ));
+        );
       }
     });
         
