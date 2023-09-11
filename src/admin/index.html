@@ -43,9 +43,9 @@
                 h('button', {"className": "blog-tab-pill"}, entry.getIn(['data', 'date']))
               ),
             ),
-            h('div', {"className": "mt-5"}, 
+            /*h('div', {"className": "mt-5"}, 
               h('img', {src: bg.toString()}, {"className": "w-100"}),
-            ),
+            ),*/
             h('div', {"className": "blog-content"}, this.props.widgetFor('body')),
         ));
         
