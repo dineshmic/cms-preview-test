@@ -23,6 +23,14 @@ CMS.registerPreviewStyle("/../assets/css/blog-style.css");
               ),
               h('button', {"className": "navbar-toggler", type:"button", "data-bs-toggle":"collapse", "data-bs-target":"#navbarSupportedContent", "aria-controls":"navbarSupportedContent", "aria-expanded":"false", "aria-label":"Toggle navigation"},
                 h('span', {"className": "navbar-toggler-icon"}," ")
+              ),
+              h('div', {"className": "collapse navbar-collapse ms-md-5", "id":"navbarSupportedContent"},
+                h('ul', {"className": "navbar-nav me-auto mb-2 mb-md-0"},
+                  h('li', {"className": "nav-item"},
+                    h('a', {"className": "nav-link", "href":"../../pricing.html"},"Pricing"
+                    )
+                  )
+                )
               )
             )
           )
