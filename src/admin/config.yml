@@ -22,7 +22,7 @@ collections:
     - { label: "Twitter Image", name: "twitterImage", widget: "image"}
     - { label: "Event Name For Tracking", name: "eventNameForTracking", widget: "string"}
     - { label: "Event ID For Tracking", name: "eventIdForTracking", widget: "string"}
-    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Blog Title", name: "title", widget: "string"}
     - {label: "Category", name: "category", widget: "string"}
     - {label: "Description", name: "description", widget: "string"}
     - {label: "Author", name: "author", widget: "string"}
