@@ -1,3 +1,4 @@
+import React from "react";
 CMS.registerPreviewStyle("/../assets/css/bootstrap.min.css");
 CMS.registerPreviewStyle("/../assets/css/blog-style.css");
 
@@ -42,6 +43,18 @@ CMS.registerPreviewStyle("/../assets/css/blog-style.css");
     }
   });
 
+  export default class BlogPagePreview extends React.Component {
+    render() {
+        const { entry } = this.props;
+
+        return (
+            <div><h1>Welcome</h1>
+             
+            </div>
+        );
+    }
+}
+
  
       
-  CMS.registerPreviewTemplate("blog", PostPreview);
+  CMS.registerPreviewTemplate("blog", BlogPagePreview);
