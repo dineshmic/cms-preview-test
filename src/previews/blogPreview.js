@@ -13,16 +13,18 @@ CMS.registerPreviewStyle("/../assets/css/blog-style.css");
       
       return h('div', {},
         //=========header============
-        h('div', {"className": "position-absolute top-0 w-100 z-index-1"},
-          h('div', {"className": "container"},
-            h('nav', {"className": "navbar navbar-expand-md navbar-dark"},
-              h('div', {"className": "container-fluid"},
-                h('a', {"className": "navbar-brand", href:"../../index.html"},"123"
+      h('div', {"className": "position-absolute top-0 w-100 z-index-1"},
+        h('div', {"className": "container"},
+          h('nav', {"className": "navbar navbar-expand-md navbar-dark"},
+            h('div', {"className": "container-fluid"},
+              h('a', {"className": "navbar-brand", href:"../../index.html"},
+                h('img', {src:"/assets/images/brand-logo.svg"},
                 )
               )
             )
           )
-        ),
+        )
+      ),
         //=========content===========
         h('div', {"className": "section1"},
           h('div', {"className": "container"},
