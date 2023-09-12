@@ -20,6 +20,9 @@ CMS.registerPreviewStyle("/../assets/css/blog-style.css");
               h('a', {"className": "navbar-brand", href:"../../index.html"},
                 h('img', {src:"/assets/images/brand-logo.svg"},
                 )
+              ),
+              h('button', {"className": "navbar-toggler", type:"button", "data-bs-toggle":"collapse", "data-bs-target":"#navbarSupportedContent", "aria-controls":"navbarSupportedContent", "aria-expanded":"false", "aria-label":"Toggle navigation"},
+                h('span', {"className": "navbar-toggler-icon"}," ")
               )
             )
           )
