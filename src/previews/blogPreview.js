@@ -35,7 +35,7 @@ CMS.registerPreviewStyle("/../assets/css/blog-style.css");
             ),
             h('div', {"className": "blog-content"}, this.props.widgetFor('body')),
       )));*/
-      return (<h1>Welcome</h1>);
+      return ("<h1>Welcome</h1>");
 
       
       
