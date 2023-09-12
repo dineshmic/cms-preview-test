@@ -1,4 +1,3 @@
-import React from "react";
 CMS.registerPreviewStyle("/../assets/css/bootstrap.min.css");
 CMS.registerPreviewStyle("/../assets/css/blog-style.css");
 
@@ -11,10 +10,18 @@ CMS.registerPreviewStyle("/../assets/css/blog-style.css");
        bg = this.props.getAsset(image);
       }
        
-      /*
+      
       return h('div', {},
         //=========header============
-        h('div', {"className": "position-absolute top-0 w-100 z-index-1"},"123456"
+        h('div', {"className": "position-absolute top-0 w-100 z-index-1"},
+          h('div', {"className": "container"},
+            h('nav', {"className": "navbar navbar-expand-md navbar-dark"},
+              h('div', {"className": "container-fluid"},
+                h('a', {"className": "navbar-brand", href:"../../index.html"},"123"
+                )
+              )
+            )
+          )
         ),
         //=========content===========
         h('div', {"className": "section1"},
@@ -35,26 +42,14 @@ CMS.registerPreviewStyle("/../assets/css/blog-style.css");
               h('img', {src: bg.toString(), "className": "w-100"}),
             ),
             h('div', {"className": "blog-content"}, this.props.widgetFor('body')),
-      )));*/
-      return ("<h1>Welcome</h1>");
-
+      )));
+     
       
       
     }
   });
 
-  export default class BlogPagePreview extends React.Component {
-    render() {
-        const { entry } = this.props;
-
-        return (
-            <div><h1>Welcome</h1>
-             
-            </div>
-        );
-    }
-}
 
  
       
-  CMS.registerPreviewTemplate("blog", BlogPagePreview);
+  CMS.registerPreviewTemplate("blog", PostPreview);
