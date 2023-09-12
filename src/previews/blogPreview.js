@@ -64,6 +64,11 @@ CMS.registerPreviewStyle("/../assets/css/blog-style.css");
           h('div', {"className": "container"},
             h('div', {"className": "d-flex justify-content-center mb-4"},
               h('a', {"href":"index.html"}, h('img', {src:"/assets/images/logo-footer.svg"}, ))
+            ),
+            h('div', {"className": "d-flex justify-content-center mb-4"},
+              h('a', {"href":"#", "className":"footer-icon"}, h('img', {src:"/assets/images/twitter-icon.svg"}, )),
+              h('a', {"href":"#", "className":"footer-icon"}, h('img', {src:"/assets/images/fb-icon.svg"}, )),
+              h('a', {"href":"#", "className":"footer-icon"}, h('img', {src:"/assets/images/linkedin-icon.svg"}, ))
             )
           )
         )
