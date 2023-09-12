@@ -71,7 +71,7 @@ CMS.registerPreviewStyle("/../assets/css/blog-style.css");
               h('a', {"href":"#", "className":"footer-icon"}, h('img', {src:"/assets/images/linkedin-icon.svg"}, ))
             ),
             h('div', {"className": "footer-menu"},
-              h('a', {"href":"../../old-home.html"}, "Home"),
+              h('a', {"href":"../../index.html"}, "Home"),
               h('a', {"href":"../../mission.html"}, "Mission"),
               h('a', {"href":"../../pricing.html"}, "Pricing"),
               h('a', {"href":"../../about.html"}, "About Us"),
