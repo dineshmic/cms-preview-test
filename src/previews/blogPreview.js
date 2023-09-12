@@ -26,10 +26,11 @@ CMS.registerPreviewStyle("/../assets/css/blog-style.css");
               ),
               h('div', {"className": "collapse navbar-collapse ms-md-5", "id":"navbarSupportedContent"},
                 h('ul', {"className": "navbar-nav me-auto mb-2 mb-md-0"},
-                  h('li', {"className": "nav-item"},
-                    h('a', {"className": "nav-link", "href":"../../pricing.html"},"Pricing"
-                    )
-                  )
+                  h('li', {"className": "nav-item"}, h('a', {"className": "nav-link", "href":"../../pricing.html"},"Pricing")),
+                  h('li', {"className": "nav-item"}, h('a', {"className": "nav-link", "href":"../../about.html"},"About Us")),
+                  h('li', {"className": "nav-item"}, h('a', {"className": "nav-link", "href":"../../mission.html"},"Mission")),
+                  h('li', {"className": "nav-item"}, h('a', {"className": "nav-link", "href":"../../why-us.html"},"Why Us")),
+                  h('li', {"className": "nav-item"}, h('a', {"className": "nav-link", "href":"../../capabilities.html"},"Capabilities"))
                 )
               )
             )
