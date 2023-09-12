@@ -10,7 +10,7 @@ CMS.registerPreviewStyle("/../assets/css/blog-style.css");
        bg = this.props.getAsset(image);
       }
        
-      
+      /*
       return h('div', {},
         //=========header============
         h('div', {"className": "position-absolute top-0 w-100 z-index-1"},"123456"
@@ -34,7 +34,10 @@ CMS.registerPreviewStyle("/../assets/css/blog-style.css");
               h('img', {src: bg.toString(), "className": "w-100"}),
             ),
             h('div', {"className": "blog-content"}, this.props.widgetFor('body')),
-      )));
+      )));*/
+      return (('div',{},"Welcome")
+
+      );
       
     }
   });
