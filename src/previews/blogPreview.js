@@ -18,8 +18,7 @@ CMS.registerPreviewStyle("/../assets/css/blog-style.css");
           h('nav', {"className": "navbar navbar-expand-md navbar-dark"},
             h('div', {"className": "container-fluid"},
               h('a', {"className": "navbar-brand", href:"../../index.html"},
-                h('img', {src:"/assets/images/brand-logo.svg"},
-                )
+                h('img', {src:"/assets/images/brand-logo.svg"},)
               ),
               h('button', {"className": "navbar-toggler", type:"button", "data-bs-toggle":"collapse", "data-bs-target":"#navbarSupportedContent", "aria-controls":"navbarSupportedContent", "aria-expanded":"false", "aria-label":"Toggle navigation"},
                 h('span', {"className": "navbar-toggler-icon"}," ")
@@ -59,7 +58,16 @@ CMS.registerPreviewStyle("/../assets/css/blog-style.css");
               h('img', {src: bg.toString(), "className": "w-100"}),
             ),
             h('div', {"className": "blog-content"}, this.props.widgetFor('body')),
-      )));
+          )),
+        //=========footer===========
+        h('div', {"className": "footer"},
+          h('div', {"className": "container"},
+            h('div', {"className": "d-flex justify-content-center mb-4"},
+              h('a', {"href":"index.html"}, h('img', {src:"/assets/images/logo-footer.svg"}, ))
+            )
+          )
+        )
+      );
      
       
       
